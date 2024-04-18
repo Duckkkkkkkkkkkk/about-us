@@ -1,0 +1,22 @@
+:root {
+    --bg-color: #000;
+    --textColor: #fff;
+    --yellow: #EBD96B;
+    --blue: #0558FC;
+    --light-blue: #A7D0FF;
+    --purple: #9E24D8;
+    --gray: #7f7f7f;
+    --green: #11EF72;
+}
+
+body {
+    font-family: 'Bicubic', sans-serif;
+    color: var(--textColor);
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 0 30px;
+}

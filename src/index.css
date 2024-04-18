@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Bicubic';
+  src: local('Bicubic'), url(./fonts/Bicubik.OTF) format('truetype');
+}
