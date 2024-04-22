@@ -1,0 +1,17 @@
+.header {
+  gap: 80px;
+}
+
+.nav__link {
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+}
+
+.nav__link:hover {
+  color: #F0966E !important;
+}
+
+.nav__link:active {
+  color: #ED500A !important;
+}

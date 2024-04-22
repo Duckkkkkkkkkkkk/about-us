@@ -4,21 +4,22 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 import logo from './../../img/titles/logo.png'
+import styles from './header.module.css'
 
 const Header = () => {
     return ( 
-        <Navbar expand="md" className="bg-transparent" fixed="top">
+        <Navbar expand="md" className="bg-transparent position-relative">
             <Container>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav"  />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
-                    <Nav className="header" style={{ gap: '30px' }}>
-                        <Nav.Link href="#home" className="text-light" style={{ fontSize: '16px', fontWeight: 'normal' }}>Кто и что</Nav.Link>
-                        <Nav.Link href="#link" className="text-light" style={{ fontSize: '16px', fontWeight: 'normal' }}>IT-Corgi</Nav.Link>
-                        <Navbar.Brand href="#home" style={{ paddingLeft: '15px' }}>
+                    <Nav className={styles.header}>
+                        <Nav.Link href="#home" className={`text-light ${styles.nav__link}`}>Кто и что</Nav.Link>
+                        <Nav.Link href="#link" className={`text-light ${styles.nav__link}`}>первый IT-Corgi</Nav.Link>
+                        <Navbar.Brand className='pl-2 pb-0' href="#home">
                             <Image src={logo} fluid />
                         </Navbar.Brand>
-                        <Nav.Link href="#home" className="text-light" style={{ fontSize: '16px', fontWeight: 'normal' }}>FreshCode</Nav.Link>
-                        <Nav.Link href="#link" className="text-light" style={{ fontSize: '16px', fontWeight: 'normal' }}>Почему мы</Nav.Link>
+                        <Nav.Link href="#home" className={`text-light ${styles.nav__link}`}>FreshCode</Nav.Link>
+                        <Nav.Link href="#link" className={`text-light ${styles.nav__link}`}>Почему мы</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
