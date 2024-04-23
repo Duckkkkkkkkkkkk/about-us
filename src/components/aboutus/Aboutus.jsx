@@ -27,11 +27,11 @@ const Aboutus = () => {
             <h1 className="text-end col-8 display-1 pt-4" style={{ letterSpacing: '0.3em'}}>Кто же мы?</h1>
 
             <div className="row" style={{gap: '20px'}}>
-                <div className="col-6">
+                <div className="col-4">
                     <Image className='position-relative mt-5 pt-4 top-0 translate-end-x' style={{ maxWidth: '445px'}} src={polina__sprite} fluid />
                 </div>
                 <div className="col">
-                    <div className="container d-flex mt-4 p-4"> 
+                    <Container className="d-flex mt-4 p-4"> 
                         <div className={styles.about__card}>
                             <div className="mb-4"> 
                                 <div className="row g-0"> 
@@ -39,7 +39,7 @@ const Aboutus = () => {
                                         <Image src={polina__photo} className="position-relative translate-end-x" alt="..." fluid />
                                     </div>
 
-                                    <div className="col-md-8 mt-3"> 
+                                    <div className="col-md-8 mt-3 pr-3"> 
                                         <div className="card-body"> 
                                             <p className={`card-text ${styles.desc}`}> 
                                                 Привет! Я - 
@@ -54,17 +54,17 @@ const Aboutus = () => {
                                 </div> 
                             </div>
                         </div>
-                    </div>
+                    </Container>
 
-                    <div className="container d-flex mt-4 p-4"> 
+                    <Container className="d-flex mt-4 p-4"> 
                         <div className={styles.about__card__big}>
                             <div className="mb-4"> 
                                 <div className="row g-0"> 
                                     <div className="col-md-3 d-flex align-items-center">
-                                        <Image src={polina__sertificate} className="position-relative translate-end-x" alt="..." fluid />
+                                        <Image src={polina__sertificate} className="position-relative translate-end-x" alt="..." style={{ marginLeft: '-70px' }} fluid />
                                     </div>
 
-                                    <div className="col-md-8 mt-3"> 
+                                    <div className="col-md-9 mt-3"> 
                                         <div className="card-body"> 
                                             <p className={`card-text ${styles.desc}`}> 
                                                 Год назад мне открылся
@@ -82,7 +82,7 @@ const Aboutus = () => {
                                 </div> 
                             </div>
                         </div>
-                    </div>
+                    </Container>
                 </div>
             </div>
 
