@@ -31,54 +31,56 @@ const Aboutus = () => {
                     <Image className='position-relative mt-5 pt-4 top-0 translate-end-x' style={{ maxWidth: '445px'}} src={polina__sprite} fluid />
                 </div>
                 <div className="col">
-                <   div className="container d-flex mt-4 p-4"> 
-                        <div className={`card mb-3 ${styles.card}`}> 
-                            <div className="row g-0"> 
-                                <div className="col-md-6"> 
-                                    <img src={polina__photo}
-                                        className="img-fluid rounded-start" alt="..."> 
-                                    </img>
-                                </div> 
-                                <div className="col-md-6"> 
-                                    <div className="card-body"> 
-                                        <p className={`card-text ${styles.desc}`}> 
-                                            Привет! Я - 
-                                            <span>Блинова Полина</span>
-                                            . Мне 21 год. Учучь на 3 курсе Программной инженерии в ДГТУ. Эта специальность всеми называется “очень сложная”, однако 
-                                            <span>я решила сделать себе вызов</span>
-                                            , поэтому поступила на неё. И могу сказать, что успешно справилась и продолжаю в том же духе! Программирование это, конечно, непросто, но здесь много-много креатива.
-                                            <span>Сейчас мне полюбился язык Java, и стал симпотизировать React.</span> 
-                                        </p> 
+                    <div className="container d-flex mt-4 p-4"> 
+                        <div className={styles.about__card}>
+                            <div className="mb-4"> 
+                                <div className="row g-0"> 
+                                    <div className="col-md-3 d-flex align-items-center">
+                                        <Image src={polina__photo} className="position-relative translate-end-x" alt="..." fluid />
+                                    </div>
+
+                                    <div className="col-md-8 mt-3"> 
+                                        <div className="card-body"> 
+                                            <p className={`card-text ${styles.desc}`}> 
+                                                Привет! Я - 
+                                                <span>Блинова Полина</span>
+                                                . Мне 21 год. Учучь на 3 курсе Программной инженерии в ДГТУ. Эта специальность всеми называется “очень сложная”, однако 
+                                                <span>я решила сделать себе вызов</span>
+                                                , поэтому поступила на неё. И могу сказать, что успешно справилась и продолжаю в том же духе! Программирование это, конечно, непросто, но здесь много-много креатива.
+                                                <span>Сейчас мне полюбился язык Java, и стал симпотизировать React.</span> 
+                                            </p> 
+                                        </div> 
                                     </div> 
                                 </div> 
-                            </div> 
+                            </div>
                         </div>
                     </div>
 
                     <div className="container d-flex mt-4 p-4"> 
-                        <div className="card mb-3" style={{maxWidth:'1009px'}}> 
-                            <div className="row g-0"> 
-                                <div className="col-md-6"> 
-                                    <img src={polina__sertificate}
-                                        className="img-fluid rounded-start" alt="..."> 
-                                    </img>
-                                </div> 
-                                <div className="col-md-6"> 
-                                    <div className="card-body"> 
-                                        <p className={`card-text ${styles.desc}`}> 
-                                            Год назад мне открылся
-                                            <span> дизайн.</span>
-                                            Не дизайн одежды, а именно веб-дизайн. Я прошла большой практический онлайн-курс
-                                            <span> «Профессия-Дизайнер» от агентства «Время Первых»</span>
-                                            . Было безумно интересно и полезно! Меня научили разработки дизайна для продающих сайтов, презентаций и PDF-материалов. После прохождения курса                                 
-                                            <span> меня пригласили в Москву на «Ночь дизайна»</span>
-                                            , где я и ребята с разных уголков нашей страны должны были за полтора часа разработать дизайн для главной страницы сайта. Это мероприятие дало огромный опыт!
-                                            <span> Мои хобби</span>
-                                            - йога, катание на вейвборде и ролликах, рисование (хоть это и картины по номерам).
-                                        </p> 
+                        <div className={styles.about__card__big}>
+                            <div className="mb-4"> 
+                                <div className="row g-0"> 
+                                    <div className="col-md-3 d-flex align-items-center">
+                                        <Image src={polina__sertificate} className="position-relative translate-end-x" alt="..." fluid />
+                                    </div>
+
+                                    <div className="col-md-8 mt-3"> 
+                                        <div className="card-body"> 
+                                            <p className={`card-text ${styles.desc}`}> 
+                                                Год назад мне открылся
+                                                <span> дизайн.</span>
+                                                Не дизайн одежды, а именно веб-дизайн. Я прошла большой практический онлайн-курс
+                                                <span> «Профессия-Дизайнер» от агентства «Время Первых»</span>
+                                                . Было безумно интересно и полезно! Меня научили разработки дизайна для продающих сайтов, презентаций и PDF-материалов. После прохождения курса                                 
+                                                <span> меня пригласили в Москву на «Ночь дизайна»</span>
+                                                , где я и ребята с разных уголков нашей страны должны были за полтора часа разработать дизайн для главной страницы сайта. Это мероприятие дало огромный опыт!
+                                                <span> Мои хобби</span>
+                                                - йога, катание на вейвборде и ролликах, рисование (хоть это и картины по номерам).
+                                            </p> 
+                                        </div> 
                                     </div> 
                                 </div> 
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </div>

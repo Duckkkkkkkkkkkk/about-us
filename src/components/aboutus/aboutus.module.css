@@ -6,34 +6,29 @@
     position: absolute;
     z-index: -1;
 }
-
-.card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    /* background-color: rgba(255, 255, 255, 0.5); полупрозрачный белый цвет */
-    background-color: red;
-    z-index: -1;
-    opacity: 0.5;
+  
+  .about__card {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 23px;
+    max-width: 772px;
   }
   
-  .card {
-    max-width: 772px;
-    position: relative; /* Для позиционирования псевдоэлемента относительно .card */
+  .about__card__big {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 23px;
+    max-width: 846px;
   }
   
   .desc {
+    max-width: 700px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: normal;
-    color: black;
+    color: white;
+    text-align: left;
   }
   
-  .desc {
+  .desc span{
     font-weight: bold;
   }
   
