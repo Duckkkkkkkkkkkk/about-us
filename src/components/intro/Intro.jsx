@@ -19,7 +19,7 @@ const Intro = () => {
             <Image src={bg} fluid />
         </div>
         <Container>
-            <h1 className="text-center display-1 pt-4" style={{ letterSpacing: '0.3em'}}>История</h1>
+            <h1 className="text-center display-1 pt-5 mt-5" style={{ letterSpacing: '0.3em'}}>История</h1>
 
             <div class="row justify-content-center">
                 <div class="col-4 d-flex justify-content-end">
@@ -52,16 +52,18 @@ const Intro = () => {
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-4">
-                    <Button
-                        className={`contact-button btn btn-lg mt-1 btn-block ${styles.contactButton} ${isHover1 ? styles.dancing : ''}`}
-                        onMouseEnter={() => setIsHover1(true)}
-                        onMouseLeave={() => setIsHover1(false)}
-                    >
-                        Связаться
-                    </Button>
-                </div>
-            </div>
+    <div class="col-12 text-center">
+        <Button
+            className={`btn btn-lg mt-1 ml-5 mr-5 btn-circle ${styles.contactButton} ${isHover1 ? styles.dancing : ''} w-100`}
+            onMouseEnter={() => setIsHover1(true)}
+            onMouseLeave={() => setIsHover1(false)}
+        >
+            Связаться
+        </Button>
+    </div>
+</div>
+
+
 
             {/* <div class="row justify-content-center">
                 <div class="col-4 d-flex justify-content-end">
