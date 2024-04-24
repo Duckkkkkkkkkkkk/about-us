@@ -1,4 +1,4 @@
-import { Container, Image, Button, Carousel, CarouselItem } from 'react-bootstrap';
+import { Container, Image, Carousel } from 'react-bootstrap';
 
 import bg from './../../img/images/bg-about-us.png'
 import polina__photo from './../../img/images/polina-photo.png'
@@ -29,14 +29,14 @@ const Aboutus = () => {
             <Image src={bg} fluid />
         </div> */}
         <Container>
-            <h1 className="text-end col-8 display-1 pt-5" style={{ letterSpacing: '0.3em'}}>Кто же мы?</h1>
+            <h1 className="text-end col-7 display-2 pt-5 " style={{ letterSpacing: '0.2em'}}>Кто же мы?</h1>
 
-            <div className="row " style={{gap: '20px'}}>
+            <div className="row ">
                 <div className="col-4">
                     <Image className='z-n1 position-relative mt-5 pt-4 top-0 translate-start-x' src={polina__sprite} fluid />
                 </div>
-                <div className="col-7"> 
-                    <Container className="d-flex mt-4"> 
+                <div className="col-7 justify-content-end"> 
+                    <Container className="d-flex mt-4 justify-content-end"> 
                         <div className={styles.about__card}>
                             <div className="row g-0"> 
                                 <div className="col-md-3 d-flex align-items-center">
@@ -61,7 +61,7 @@ const Aboutus = () => {
 
                     <div style={{ height: '40px' }}></div>
 
-                    <Container className="d-flex mt-4 p-4"> 
+                    <Container className="d-flex mt-4 p-4 justify-content-end"> 
                         <div className={styles.about__card__big}>
                             <div className="row g-0"> 
                                 <div className="col-md-3 d-flex flex-column align-items-center">
@@ -90,9 +90,9 @@ const Aboutus = () => {
                 </div>
             </div>
 
-            <div className="row " style={{gap: '10px'}}>
-                <div className="col"> 
-                    <Container className="d-flex justify-content-end mt-4 align-items-center"> 
+            <div className="d-flex justify-content-between">
+                <div className="col-6 mx-auto"> 
+                    <Container className="d-flex justify-content-start mt-4"> 
                         <div className={styles.about__card}>
                             <div className=""> 
                                 <div className="row g-0"> 
@@ -120,7 +120,7 @@ const Aboutus = () => {
 
                     <div style={{ height: '40px' }}></div>
 
-                    <Container className="d-flex justify-content-end mt-4 position-relative"> 
+                    <Container className="d-flex justify-content-start mt-4 position-relative"> 
                         <div className={styles.about__card__big}>
                             <div className="mb-4"> 
                                 <div className="row g-0"> 
@@ -149,7 +149,7 @@ const Aboutus = () => {
                     </Container>
                 </div>
                 <div className="col-4">
-                    <Image className='z-n1 position-relative mt-5 pt-4 top-0 translate-start-x' src={nastya__sprite} fluid />
+                    <Image className='z-n1 position-relative mt-5 pt-4 top-0 translate-end-x' src={nastya__sprite} fluid />
                 </div>
             </div>
 

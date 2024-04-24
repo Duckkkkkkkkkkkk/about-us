@@ -5,6 +5,8 @@ import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 
 import sprites from './../../img/images/main-sprites.png'
+import polina__role from './../../img/titles/polina__role.png'
+import nastya__role from './../../img/titles/nastya__role.png'
 import about__us from './../../img/titles/logo-about-us.png'
 import bg from './../../img/images/bg-main-screen.png'
 
@@ -23,13 +25,15 @@ const Intro = () => {
 
             <div className="row justify-content-center">
                 <div className="col-4 d-flex justify-content-end">
-                    <h3 className="text-start fs-5 mt-5 pt-4 text-wrap" style={{maxWidth: '179px'}}>Блинова Полина</h3>
+                    <h3 className="text-end fs-5 mt-5 pt-4 text-wrap" style={{maxWidth: '179px'}}>Блинова Полина</h3>
+                    <Image className='position-absolute pb-5 top-50 translate-middle-y' src={polina__role} style={{transform: 'translateX(-50%)'}}/>
                 </div>
                 <div className="col-4">
                     <Image className='z-n1 position-absolute mt-5 pt-4 top-0 translate-middle-x' src={sprites} fluid />
                 </div>
                 <div className="col-4 d-flex justify-content-start">
                     <p className="text-start fs-5 mt-5 pt-4 text-wrap" style={{maxWidth: '179px'}}>Ротина Анастасия</p>
+                    <Image className='position-absolute pb-5 top-50 translate-middle-y' src={nastya__role} style={{ transform: 'translateX(-50%)'}}/>
                 </div>
             </div>
             <Image className='mt-5 pt-5' src={about__us} fluid />

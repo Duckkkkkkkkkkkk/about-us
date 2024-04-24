@@ -9,9 +9,9 @@
 }
 
 .nav__link:hover {
-  color: #F0966E !important;
+  color: var(--orange)!important;
 }
 
 .nav__link:active {
-  color: #ED500A !important;
+  color: var(--dark-orange) !important;
 }

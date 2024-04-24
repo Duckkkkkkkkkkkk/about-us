@@ -7,10 +7,24 @@
     z-index: -1;
 }
 
+/* .polina__role {
+    position: absolute;
+    left: 680px;
+    top: 310px;
+    transform: translateX(-50%);
+}
+
+.nastya__role {
+    position: absolute;
+    right: 582px;
+    top: 310px;
+    transform: translateX(-50%);
+} */
+
 .contactButton {
-    background: linear-gradient(to bottom, #FF824B, #ED500A);
+    background: linear-gradient(to bottom, var(--orange), var(--dark-orange));
     box-shadow: inset 0px 0px 20px rgb(255,255,255);
-    color: white;
+    color: var(--textColor);
     border: none;
     padding: 25px 36px;
     transition: transform 0.5s ease, box-shadow 0.3s ease, opacity 0.3s ease;
@@ -25,7 +39,7 @@
 
 .notion span{
     font-weight: bold;
-    color: #ED500A;
+    color: var(--dark-orange);
 }
 
 .dancing {

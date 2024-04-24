@@ -2,6 +2,7 @@ import './App.css';
 import Aboutus from './components/aboutus/Aboutus';
 import Header from './components/header/Header';
 import Intro from './components/intro/Intro';
+import ITcorgi from './components/it-corgi/ITcorgi';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Intro />
       <Aboutus />
+      <ITcorgi />
     </div>
   );
 }
