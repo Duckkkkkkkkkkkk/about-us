@@ -40,6 +40,12 @@
     background: linear-gradient(to bottom right, #FF7132, #C9460B);
     padding: 20px 30px;
 }
+
+@media (max-width: 768px) {
+    .contactButton {
+      width: 100%;
+    }
+}  
  
 @keyframes dancing {
     0% {

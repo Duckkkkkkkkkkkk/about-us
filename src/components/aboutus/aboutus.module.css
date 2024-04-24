@@ -18,6 +18,11 @@
     border-radius: 23px;
     max-width: 846px;
   }
+
+  .fashionImage {
+    position: absolute;
+    width: calc(100%);
+  }
   
   .desc {
     max-width: 700px;
@@ -35,7 +40,8 @@
 
   @media (min-width: 992px) {
     .custom__margin {
-      margin-left: -70px;
+      margin-left: -100px;
+      position: absolute;
     }
   }
   
@@ -43,7 +49,36 @@
     .custom__margin {
       margin-left: auto;
       margin-right: auto;
+      position: relative;
+
+    }
+  }
+
+  @media (min-width: 992px) {
+    .custom__margin2 {
+      margin-left: 580px;
+      position: absolute;
     }
   }
   
+  @media (max-width: 991px) {
+    .custom__margin2 {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+  }  
+
+  @media (min-width: 992px) {
+    .custom__margin3 {
+      position: absolute;
+    }
+  }
   
+  @media (max-width: 991px) {
+    .custom__margin3 {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+  }  
