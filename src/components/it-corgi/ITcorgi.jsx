@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Button, Container, Image, Carousel } from "react-bootstrap";
+import { Container, Image, Carousel } from "react-bootstrap";
 
 import video from './../../img/video/video.mp4';
 
@@ -54,10 +54,10 @@ const ITcorgi = () => {
                 </div>
                 {windowWidth >= 768 ? (
                     <>
-                        <div className="col-md-10 offset-md-0 align-items-end">
+                        <div className="col-md-10 offset-md-0 align-items-end mb-0">
                             <Image src={steps} className='ml-md-5' alt="..." fluid style={{marginLeft: 'auto', marginRight: 'auto'}} />
                         </div>
-                        <div className="row justify-content-center align-items-start">
+                        <div className="row justify-content-center align-items-start mt-0">
                             <div className="col-md-8 offset-md-2 text-center">
                                 <div className="embed-responsive embed-responsive-1by1">
                                     <video 

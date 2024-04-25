@@ -23,7 +23,7 @@
 
 .contactButton {
     background: linear-gradient(to bottom, var(--orange), var(--dark-orange));
-    box-shadow: inset 0px 0px 20px rgb(255,255,255);
+    box-shadow: inset 0px 0px 10px rgb(255,255,255);
     color: var(--textColor);
     border: none;
     padding: 25px 36px;
@@ -52,7 +52,6 @@
 
 .contactButton:active {
     background: linear-gradient(to bottom right, #FF7132, #C9460B);
-    padding: 20px 30px;
 }
 
 @media (max-width: 768px) {

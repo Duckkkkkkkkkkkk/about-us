@@ -1,0 +1,27 @@
+.desc {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: var(textColor);
+    padding-left: 40px;
+}
+
+.desc  span{
+    font-weight: bold;
+}
+
+.freshcode__code {
+    padding-left: 30px;
+}
+
+.phone {
+    max-width: 409px;
+    margin-top: 40px;
+    margin-left: -50px;
+}
+
+@media (max-width: 767px) {
+    .phone {
+      display: none;
+    }
+  }
+  

@@ -16,7 +16,7 @@ const Header = () => {
                             <Image src={logo} fluid />
                         </Navbar.Brand>
                         <Nav.Link href="#home" className={`text-light ${styles.nav__link}`}>Fresh Code</Nav.Link>
-                        <Nav.Link href="#link" className={`text-light ${styles.nav__link}`}>Почему мы</Nav.Link>
+                        <Nav.Link href="#link" className={`text-light ${styles.nav__link}`}>Контакты</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

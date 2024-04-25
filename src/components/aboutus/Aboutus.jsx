@@ -50,12 +50,9 @@ const Aboutus = () => {
             <Image src={bg} fluid />
         </div> */}
         <Container>
-            <h1 className="text-end col-7 display-2 pt-5 " style={{ letterSpacing: '0.2em'}}>Кто же мы?</h1>
+            <h1 className="text-end col-6 display-2 pt-5 " style={{ letterSpacing: '0.1em'}}>Кто же мы?</h1>
 
             <div className="row ">
-                {/* <div className="col-4">
-                    <Image className={`z-n1 position-relative mt-5 pt-4 top-0 translate-start-x ${styles.sprite}`} src={polina__sprite} fluid />
-                </div> */}
                 {isSpriteVisible && (
                     <div className="col-4">
                         <Image className={`position-relative mt-5 pt-4 top-0 translate-start-x ${styles.sprite}`} src={polina__sprite} fluid />
@@ -167,7 +164,7 @@ const Aboutus = () => {
                 </div> */}
             </div>
 
-            <div className="d-flex justify-content-evenly">
+            <div className="row d-flex justify-content-center">
                 <div className={`col-7 ${!isSpriteVisible && 'col-12'}`}>
                     <Container className="d-flex justify-content-start mt-4"> 
                         <div className={styles.about__card}>
