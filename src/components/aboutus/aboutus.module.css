@@ -12,6 +12,12 @@
     border-radius: 23px;
     max-width: 772px;
   }
+
+  .about__card__medium {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 23px;
+    max-width: 839px;
+  }
   
   .about__card__big {
     background-color: rgba(255, 255, 255, 0.2);
@@ -27,7 +33,6 @@
   .desc {
     max-width: 700px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
     font-weight: normal;
     color: var(textColor);
     text-align: left;
@@ -82,3 +87,10 @@
       position: relative;
     }
   }  
+
+  @media (max-width: 767px) {
+    .sprite {
+      display: none;
+    }
+  }
+  

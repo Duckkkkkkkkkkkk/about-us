@@ -1,0 +1,19 @@
+.title {
+    background-image: linear-gradient(to right, var(--dark-orange), var(--dark-orange), var(--textColor), var(--textColor), var(--textColor));
+    letter-spacing: 0.1em;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.desc {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--textColor);
+    font-weight: normal;
+    max-width: 538px;
+}
+
+.desc span {
+    color: var(--dark-orange);
+    font-weight: bold;
+}

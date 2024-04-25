@@ -15,7 +15,7 @@ const Header = () => {
                         <Navbar.Brand className='pl-2 pb-0' href="#home">
                             <Image src={logo} fluid />
                         </Navbar.Brand>
-                        <Nav.Link href="#home" className={`text-light ${styles.nav__link}`}>FreshCode</Nav.Link>
+                        <Nav.Link href="#home" className={`text-light ${styles.nav__link}`}>Fresh Code</Nav.Link>
                         <Nav.Link href="#link" className={`text-light ${styles.nav__link}`}>Почему мы</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

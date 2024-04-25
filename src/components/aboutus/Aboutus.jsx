@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from 'react';
+
 import { Container, Image, Carousel } from 'react-bootstrap';
 
 import bg from './../../img/images/bg-about-us.png'
@@ -23,6 +25,25 @@ import slide32 from './../../img/images/slide32.png'
 import styles from './aboutus.module.css'
 
 const Aboutus = () => {
+    const [isHover1, setIsHover1] = useState(false);
+    const [isSpriteVisible, setIsSpriteVisible] = useState(true);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 768) {
+                setIsSpriteVisible(false);
+            } else {
+                setIsSpriteVisible(true);
+            }
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return ( 
     <div className="position-relative" >
         {/* <div className={styles.mainbg}>
@@ -32,10 +53,15 @@ const Aboutus = () => {
             <h1 className="text-end col-7 display-2 pt-5 " style={{ letterSpacing: '0.2em'}}>Кто же мы?</h1>
 
             <div className="row ">
-                <div className="col-4">
-                    <Image className='z-n1 position-relative mt-5 pt-4 top-0 translate-start-x' src={polina__sprite} fluid />
-                </div>
-                <div className="col-7 justify-content-end"> 
+                {/* <div className="col-4">
+                    <Image className={`z-n1 position-relative mt-5 pt-4 top-0 translate-start-x ${styles.sprite}`} src={polina__sprite} fluid />
+                </div> */}
+                {isSpriteVisible && (
+                    <div className="col-4">
+                        <Image className={`position-relative mt-5 pt-4 top-0 translate-start-x ${styles.sprite}`} src={polina__sprite} fluid />
+                    </div>
+                )}
+                <div className={`col-7 ${!isSpriteVisible && 'col-12'}`}>
                     <Container className="d-flex mt-4 justify-content-end"> 
                         <div className={styles.about__card}>
                             <div className="row g-0"> 
@@ -58,6 +84,57 @@ const Aboutus = () => {
                             </div> 
                         </div>
                     </Container>
+                    <div style={{ height: '40px' }}></div>
+                    <Container className="d-flex mt-4 justify-content-end"> 
+                        <div className={styles.about__card__big}>
+                            <div className="row g-0"> 
+                                <div className="col-md-3 d-flex flex-column align-items-center">
+                                    <Image src={polina__hobby} className={`mb-3 ${styles.custom__margin}`} alt="polina's hobbies" style={{marginTop: '-30px'}} fluid />
+                                    <Image src={polina__sertificate} className={`mb-3 ${styles.custom__margin}`} alt="polina's sertificate" fluid />
+                                </div>
+
+                                <div className="col-md-9 mt-3"> 
+                                    <div className="card-body"> 
+                                        <p className={`card-text ${styles.desc}`}> 
+                                            Год назад мне открылся
+                                            <span> дизайн.</span>
+                                            Не дизайн одежды, а именно веб-дизайн. Я прошла большой практический онлайн-курс
+                                            <span> «Профессия-Дизайнер» от агентства «Время Первых»</span>
+                                            . Было безумно интересно и полезно! Меня научили разработки дизайна для продающих сайтов, презентаций и PDF-материалов. После прохождения курса                                 
+                                            <span> меня пригласили в Москву на «Ночь дизайна»</span>
+                                            , где я и ребята с разных уголков нашей страны должны были за полтора часа разработать дизайн для главной страницы сайта. Это мероприятие дало огромный опыт!
+                                            <span> Мои хобби </span>
+                                            - йога, катание на вейвборде и ролликах, рисование (хоть это и картины по номерам).
+                                        </p> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+                    </Container>                
+                </div>
+                {/* <div className="col-7 justify-content-end"> 
+                    <Container className="d-flex mt-4 justify-content-end"> 
+                        <div className={styles.about__card}>
+                            <div className="row g-0"> 
+                                <div className="col-md-3 d-flex align-items-center">
+                                    <Image src={polina__photo} className="position-relative translate-end-x" alt="..." fluid style={{marginLeft: 'auto', marginRight: 'auto'}} />
+                                </div>
+
+                                <div className="col-md-9 mt-3 pr-3"> 
+                                    <div className="card-body"> 
+                                        <p className={`card-text ${styles.desc}`}> 
+                                            Привет! Я - 
+                                            <span> Блинова Полина</span>
+                                            . Мне 21 год. Учучь на 3 курсе Программной инженерии в ДГТУ. Эта специальность всеми называется “очень сложная”, однако 
+                                            <span> я решила сделать себе вызов</span>
+                                            , поэтому поступила на неё. И могу сказать, что успешно справилась и продолжаю в том же духе! Программирование это, конечно, непросто, но здесь много-много креатива.
+                                            <span> Сейчас мне полюбился язык Java, и стал симпотизировать React.</span> 
+                                        </p> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+                    </Container> 
 
                     <div style={{ height: '40px' }}></div>
 
@@ -87,11 +164,11 @@ const Aboutus = () => {
                             </div> 
                         </div>
                     </Container>
-                </div>
+                </div> */}
             </div>
 
-            <div className="d-flex justify-content-between">
-                <div className="col-6 mx-auto"> 
+            <div className="d-flex justify-content-evenly">
+                <div className={`col-7 ${!isSpriteVisible && 'col-12'}`}>
                     <Container className="d-flex justify-content-start mt-4"> 
                         <div className={styles.about__card}>
                             <div className=""> 
@@ -121,7 +198,7 @@ const Aboutus = () => {
                     <div style={{ height: '40px' }}></div>
 
                     <Container className="d-flex justify-content-start mt-4 position-relative"> 
-                        <div className={styles.about__card__big}>
+                        <div className={styles.about__card__medium}>
                             <div className="mb-4"> 
                                 <div className="row g-0"> 
                                 <div className="col-md-3 d-flex flex-column align-items-center">
@@ -149,7 +226,7 @@ const Aboutus = () => {
                     </Container>
                 </div>
                 <div className="col-4">
-                    <Image className='z-n1 position-relative mt-5 pt-4 top-0 translate-end-x' src={nastya__sprite} fluid />
+                    <Image className={`position-relative mt-5 pt-4 top-0 translate-end-x ${styles.sprite}`} src={nastya__sprite} fluid />
                 </div>
             </div>
 
@@ -157,10 +234,10 @@ const Aboutus = () => {
 
             <div className="row " style={{gap: '20px'}}>
                 <div className="col-5">
-                    <Image className='position-relativetop-0 translate-start-x align-items-start' style={{marginTop: '-40px'}} src={diploms} fluid />
+                    <Image className={`position-relativetop-0 translate-start-x align-items-start ${styles.sprite}`} style={{marginTop: '-40px'}} src={diploms} fluid />
                 </div>
-                <div className="col-5"> 
-                    <Container className="d-flex mt-4 p-4"> 
+                <div className={`col-5 ${!isSpriteVisible && 'col-12'}`}>
+                    <Container className="d-flex p-4"> 
                         <div className={styles.about__card__big}>
                             <div className="col-md-3 d-flex flex-column align-items-end">
                                     <Image src={win} className={`mb-3 ${styles.custom__margin}`} alt="polina's hobbies" style={{marginTop: '-40px'}} fluid />
@@ -184,7 +261,7 @@ const Aboutus = () => {
                 </div>
             </div>
 
-            <Carousel controls indicators className="carousel-sm mx-auto" style={{maxWidth: '70%'}}>
+            <Carousel controls indicators className="carousel-sm mx-auto" style={{maxWidth: '80%'}}>
                 <Carousel.Item>
                     <div className="row justify-content-center g-0">
                         <div className="col">
