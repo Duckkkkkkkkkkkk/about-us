@@ -1,5 +1,7 @@
 import './App.css';
 import Aboutus from './components/aboutus/Aboutus';
+import Contacts from './components/contacts/Contacts';
+import Footer from './components/footer/Footer';
 import Freshcode from './components/freshcode/Freshcode';
 import Header from './components/header/Header';
 import Intro from './components/intro/Intro';
@@ -13,6 +15,8 @@ function App() {
       <Aboutus />
       <ITcorgi />
       <Freshcode />
+      <Contacts />
+      <Footer />
     </div>
   );
 }

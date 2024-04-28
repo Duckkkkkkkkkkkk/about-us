@@ -17,7 +17,7 @@ const Freshcode = () => {
     const isSmallScreen = useMediaQuery({ maxWidth: 767 });
 
     return ( 
-        <div className="position-relative">
+        <div className="position-relative" id="freshcode">
             <Container>
                 <div className="d-flex flex-column align-items-center justify-content-center">
                     <div className={`row d-flex justify-content-center ${isSmallScreen ? 'flex-column-reverse' : ''}`}>

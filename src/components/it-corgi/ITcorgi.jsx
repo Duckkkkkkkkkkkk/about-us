@@ -41,7 +41,7 @@ const ITcorgi = () => {
     }, []);
 
     return ( 
-        <div className="position-relative">
+        <div className="position-relative" id="it-corgi">
             <Container fluid>
                 <h1 className={`text-center display-2 pt-5 ${styles.title}`}>ПЕРВЫЙ IT-Corgi</h1>
                 <div className="d-flex justify-content-center">

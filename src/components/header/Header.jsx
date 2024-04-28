@@ -1,22 +1,26 @@
 import React from 'react';
 import { Container, Image, Nav, Navbar } from 'react-bootstrap';
+import burger__icon from './../../img/designElements/burger_icon.png';
 import logo from './../../img/titles/logo.png';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import styles from './header.module.css';
 
 const Header = () => {
     return (
-        <Navbar expand="md" className="bg-black position-fixed w-100" style={{ top: 0, zIndex: 1000 }}>
+        <Navbar className="bg-black position-fixed w-100" style={{ top: 0, zIndex: 1000 }} expand="md">
             <Container>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0">
+                    <Image src={burger__icon} style={{maxWidth: '30px'}} fluid />
+                </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
                     <Nav className={styles.header}>
-                        <Nav.Link href="#home" className={`text-light ${styles.nav__link}`}>Кто и что</Nav.Link>
-                        <Nav.Link href="#link" className={`text-light ${styles.nav__link}`}>первый IT-Corgi</Nav.Link>
-                        <Navbar.Brand className='pl-2 pb-0' href="#home">
+                        <AnchorLink href="#about-us" className={`text-light ${styles.nav__link}`}>Кто и что</AnchorLink>
+                        <AnchorLink href="#it-corgi" className={`text-light ${styles.nav__link}`}>первый IT-Corgi</AnchorLink>
+                        <Navbar.Brand href="#main-screen">
                             <Image src={logo} fluid />
                         </Navbar.Brand>
-                        <Nav.Link href="#home" className={`text-light ${styles.nav__link}`}>Fresh Code</Nav.Link>
-                        <Nav.Link href="#link" className={`text-light ${styles.nav__link}`}>Контакты</Nav.Link>
+                        <AnchorLink href="#freshcode" className={`text-light ${styles.nav__link}`}>Fresh Code</AnchorLink>
+                        <AnchorLink href="#contacts" className={`text-light ${styles.nav__link}`}>Контакты</AnchorLink>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

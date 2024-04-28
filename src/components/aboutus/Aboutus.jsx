@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 import { Container, Image, Carousel } from 'react-bootstrap';
 
-import bg from './../../img/images/bg-about-us.png'
 import polina__photo from './../../img/images/polina-photo.png'
 import polina__sprite from './../../img/images/polina__sprite.png'
 import nastya__photo from './../../img/images/nastya-photo.png'
@@ -25,7 +24,6 @@ import slide32 from './../../img/images/slide32.png'
 import styles from './aboutus.module.css'
 
 const Aboutus = () => {
-    const [isHover1, setIsHover1] = useState(false);
     const [isSpriteVisible, setIsSpriteVisible] = useState(true);
 
     useEffect(() => {
@@ -45,7 +43,7 @@ const Aboutus = () => {
     }, []);
 
     return ( 
-    <div className="position-relative" >
+    <div className="position-relative" id="about-us">
         {/* <div className={styles.mainbg}>
             <Image src={bg} fluid />
         </div> */}
