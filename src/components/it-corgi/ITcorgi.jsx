@@ -80,7 +80,7 @@ const ITcorgi = () => {
                                     <Image className="d-block mx-auto mb-5" src={step01} alt="slide 1" />
                                 </div>
                                 <div className="col">
-                                    <Image className="d-block mx-auto mb-5" src={pic__step01} alt="slide 1" style={{maxHeight: '300px'}}/>
+                                    <Image className="d-block mx-auto mb-5" src={pic__step01} alt="slide 1" style={{maxHeight: '250px'}}/>
                                 </div>
                             </div>
                         </Carousel.Item>
@@ -90,7 +90,7 @@ const ITcorgi = () => {
                                     <Image className="d-block mx-auto mb-5" src={step02} alt="slide 2" />
                                 </div>
                                 <div className="col">
-                                    <Image className="d-block mx-auto mb-5" src={pic__step02} alt="slide 2" style={{maxHeight: '300px'}}/>
+                                    <Image className="d-block mx-auto mb-5" src={pic__step02} alt="slide 2" style={{maxHeight: '250px'}}/>
                                 </div>
                             </div>
                         </Carousel.Item>
@@ -100,7 +100,7 @@ const ITcorgi = () => {
                                     <Image className="d-block mx-auto mb-5" src={step03} alt="slide 3" />
                                 </div>
                                 <div className="col">
-                                    <Image className="d-block mx-auto mb-5" src={pic__step03} alt="slide 3" style={{maxHeight: '200px'}}/>
+                                    <Image className="d-block mx-auto mb-5" src={pic__step03} alt="slide 3" style={{maxHeight: '250px'}}/>
                                 </div>
                             </div>
                         </Carousel.Item>
@@ -110,7 +110,7 @@ const ITcorgi = () => {
                                     <Image className="d-block mx-auto mb-5" src={step04} alt="slide 4" />
                                 </div>
                                 <div className="col">
-                                    <Image className="d-block mx-auto mb-5" src={pic__step04} alt="slide 4" style={{maxHeight: '200px'}}/>
+                                    <Image className="d-block mx-auto mb-5" src={pic__step04} alt="slide 4" style={{maxHeight: '250px'}}/>
                                 </div>
                             </div>
                         </Carousel.Item>
@@ -126,7 +126,7 @@ const ITcorgi = () => {
                                         className="embed-responsive-item" 
                                         src={video} 
                                         controls
-                                        style={{maxHeight: '200px'}}
+                                        style={{maxHeight: '250px'}}
                                     >
                                     </video>
                                 </div>

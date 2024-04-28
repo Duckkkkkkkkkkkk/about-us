@@ -15,3 +15,26 @@
 .nav__link:active {
   color: var(--dark-orange) !important;
 }
+
+.button {
+  transition: transform 0.5s ease;
+  max-width: 30px;
+}
+
+.dancing {
+  animation: dancing 1s ease infinite;
+}
+
+@keyframes dancing {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-10px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
