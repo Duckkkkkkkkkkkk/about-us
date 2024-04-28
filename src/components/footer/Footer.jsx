@@ -43,13 +43,13 @@ const Footer = () => {
                         <p className={styles.text}><Image className={styles.icon} src={telegram__icon} fluid/>@Duckkkkkkk</p>
                         <p className={styles.text}><Image className={styles.icon} src={phone__icon} fluid/>8 (900) 127 72 62</p>
                     </div>
-                    <div className="col-lg-4 col-sm-12 col-xs-12 text-sm-start text-center">
+                    <div className="col-lg-4 col-sm-12 col-xs-12 text-md-start text-center">
                         <p className={styles.footer__title}>Блинова Полина</p>
                         <p className={styles.text}><Image className={styles.icon} src={email__icon} fluid/>polina.krut.573@gmail.com</p>
                         <p className={styles.text}><Image className={styles.icon} src={telegram__icon} fluid/>@Po_l_ik</p>
                         <p className={styles.text}><Image className={styles.icon} src={phone__icon} fluid/>8 (952) 564 12 86</p>
                     </div>
-                    <div className="col-lg-4 col-sm-12 col-xs-12 text-sm-start text-center">
+                    <div className="col-lg-4 col-sm-12 col-xs-12 text-md-start text-center">
                         <p className={styles.footer__title}>2024</p>
                         <p className={styles.text}><Image className={styles.icon} src={heart__icon} fluid/>Мы старались!</p>
                     </div>
